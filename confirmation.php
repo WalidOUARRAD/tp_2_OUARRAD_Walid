@@ -3,7 +3,7 @@
 
 // Function to connect to the database
 function connexionDb(){
-    $conn = mysqli_connect("localhost","root","","ecom1_tp2");
+    $conn = mysqli_connect("localhost","root","","ecom1_project");
     if(mysqli_connect_errno()){
         echo "Failed to connect to mysql ".mysqli_connect_error();
         exit();
@@ -11,7 +11,7 @@ function connexionDb(){
     return $conn;
 }
 function ajouter($formData){
-    $id = $formData['id'];
+  
     $street = $formData['street'];
     $street_nb = $formData['street_nb'];
     $type = $formData['type'];
